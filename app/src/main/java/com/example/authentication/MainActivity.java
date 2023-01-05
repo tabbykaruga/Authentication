@@ -63,31 +63,25 @@ FragmentTransaction fragmentTransaction;
             fragmentTransaction=fragmentManager.beginTransaction();
             fragmentTransaction.add(R.id.container_fragment,new HomeFragment());
             fragmentTransaction.commit();
-
         }
         if (item.getItemId() == R.id.list){
             fragmentManager=getSupportFragmentManager();
             fragmentTransaction=fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container_fragment,new PrivateFragment());
             fragmentTransaction.commit();
-
         }
         if (item.getItemId() == R.id.maps){
-
             fragmentManager=getSupportFragmentManager();
             fragmentTransaction=fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container_fragment,new MapsFragement());
             fragmentTransaction.commit();
-
         }
         if (item.getItemId() == R.id.Logout){
-
             fragmentManager=getSupportFragmentManager();
             fragmentTransaction=fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container_fragment,new LogOutFragment());
             fragmentTransaction.commit();
         }
-
         return true;
     }
 }

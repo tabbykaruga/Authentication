@@ -22,15 +22,21 @@ public class MapsFragement extends Fragment implements OnMapReadyCallback {
 
 
      private GoogleMap map;
+
+
     SupportMapFragment mapFragment;
     ArrayList<LatLng> arrayList=new ArrayList<LatLng>();
     LatLng Nairobi = new LatLng(1.2921, 36.8219);
     LatLng TakatakaSolutions = new LatLng(-1.271846, 36.796290);
     LatLng FlashServices = new LatLng(-1.284002, 36.820649);
     LatLng SmartCity = new LatLng(-1.283979, 36.822175);
-    LatLng JymtichCareServices = new LatLng(-1.296934, 36.801479);
     LatLng EcoUrbanWasteMgmLTD = new LatLng(-1.284766, 36.821397);
     LatLng BioBinsServices = new LatLng(-1.287730, 36.827534);
+    LatLng JymtichCareServices=new LatLng(-1.2969554499123148, 36.80146835832448);
+    LatLng zoataka =new LatLng(-1.318444317822455, 36.87332262720601);
+    LatLng nesco =new LatLng(-1.2840499272723442, 36.82060372945227);
+    LatLng garbagecom=new LatLng(-1.2987516545467173, 36.83804462727388);
+    LatLng bins=new LatLng(-1.3152703035387445, 36.874122845002034);
 
     @Nullable
     @Override
@@ -39,6 +45,7 @@ public class MapsFragement extends Fragment implements OnMapReadyCallback {
 
         mapFragment=(SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
         arrayList.add(Nairobi);
         arrayList.add(TakatakaSolutions);
         arrayList.add(FlashServices);
@@ -46,6 +53,10 @@ public class MapsFragement extends Fragment implements OnMapReadyCallback {
         arrayList.add(JymtichCareServices);
         arrayList.add(EcoUrbanWasteMgmLTD);
         arrayList.add(BioBinsServices);
+        arrayList.add(zoataka);
+        arrayList.add(nesco);
+        arrayList.add(garbagecom);
+        arrayList.add(bins);
         return view;
 
     }
@@ -60,6 +71,9 @@ public class MapsFragement extends Fragment implements OnMapReadyCallback {
 
             map.addMarker(new MarkerOptions().position(arrayList.get(i)).title("Marker"));
             map.animateCamera(CameraUpdateFactory.zoomTo(16.0f));
+
+
+
         }
 
     }

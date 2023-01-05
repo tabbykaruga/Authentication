@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
         }
         if (password.length() <4){
 
-            et_email.setError("Password must have at least 4 characters");
+            et_password.setError("Password must have at least 4 characters");
             return;
         }
 
@@ -84,7 +84,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     // Sign in success, update UI with the signed-in user's information
-
                     Toast.makeText(LoginActivity.this, "Login successful!!!", Toast.LENGTH_LONG).show();
                     startActivity( new Intent(getApplicationContext(),MainActivity.class));
 
@@ -108,5 +107,7 @@ public class LoginActivity extends AppCompatActivity {
     private void updateUI(FirebaseUser currentUser) {
 
     }
+
+
 
 }

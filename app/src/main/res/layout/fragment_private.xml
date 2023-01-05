@@ -21,7 +21,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="200dp"
                 android:layout_marginLeft="10dp"
                 android:orientation="horizontal">
 
@@ -32,11 +32,12 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginLeft="10dp">
 
                     <TextView
+                        android:id="@+id/tv_takataka"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -48,47 +49,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"
-                        android:text="Laikipia Road,Nairobi"
+                        android:text=" Laikipia Road,Nairobi"
                         android:textSize="15dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="serif"
-                        android:text="PO BOX 29273,Nairobi"
-                        android:textSize="15dp" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Hours"
-                            android:textSize="15sp" />
-
-                        <Spinner
-                            android:id="@+id/takataka_hours"
-                            android:layout_width="50dp"
-                            android:layout_height="wrap_content"
-                            android:entries="@array/takatakahours_array" />
-                    </LinearLayout>
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"
                         android:phoneNumber="true"
-                        android:text="0708276201"
+                        android:text=" 0708276201"
                         android:textSize="15dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"
-                        android:text="ifo@takatakasolutions.com"
+                        android:text=" ifo@takatakasolutions.com"
                         android:textSize="15dp" />
 
                     <TextView
@@ -97,12 +72,40 @@
                         android:fontFamily="serif"
                         android:text="www.takatakasolutions.com"
                         android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text=" HOURS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="15sp"/>
+                        <Spinner
+                            android:id="@+id/takataka_hours"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/takatakahours_array" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_takataka"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="NOTIFY"/>
 
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
@@ -114,11 +117,12 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginLeft="10dp">
 
                     <TextView
+                        android:id="@+id/tv_garbage.com"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -130,34 +134,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"
-                        android:text="N/A"
-                        android:textSize="15dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="serif"
                         android:text="PO BOX 3994,Nairobi"
                         android:textSize="15dp" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Hours"
-                            android:textSize="15sp" />
-
-                        <Spinner
-                            android:id="@+id/garbagecom_hours"
-                            android:layout_width="50dp"
-                            android:layout_height="wrap_content"
-                            android:entries="@array/garbagecom_array" />
-                    </LinearLayout>
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -178,29 +156,55 @@
                         android:fontFamily="serif"
                         android:text="www.garbage.co.ke"
                         android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="HOURS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/garbagecom_hours"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/garbagecom_array" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_garbagecom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="NOTIFY"/>
 
                 </LinearLayout>
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
-
                 <ImageView
                     android:layout_width="130dp"
                     android:layout_height="85dp"
                     android:src="@drawable/flashservices" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginLeft="10dp">
-
                     <TextView
+                        android:id="@+id/tv_flash"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -222,24 +226,6 @@
                         android:text="N/A"
                         android:textSize="15dp" />
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Hours"
-                            android:textSize="15sp" />
-
-                        <Spinner
-                            android:id="@+id/flashservices_hours"
-                            android:layout_width="50dp"
-                            android:layout_height="wrap_content"
-                            android:entries="@array/flashservices_array" />
-                    </LinearLayout>
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -253,13 +239,42 @@
                         android:fontFamily="serif"
                         android:text="www.flashservices.co.ke"
                         android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="HOURS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/flashservices_hours"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/flashservices_array" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_flashservices"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="NOTIFY" />
 
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
@@ -271,11 +286,12 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginLeft="10dp">
 
                     <TextView
+                        android:id="@+id/tv_nesco"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -297,23 +313,6 @@
                         android:text="PO BOX 54867,Nairobi"
                         android:textSize="15dp" />
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Hours"
-                            android:textSize="15sp" />
-
-                        <Spinner
-                            android:id="@+id/nescoservices_hours"
-                            android:layout_width="50dp"
-                            android:layout_height="wrap_content"
-                            android:entries="@array/Nescoservices_array" />
-                    </LinearLayout>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -340,15 +339,44 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="serif"
-                        android:text="ifor@flashservices.co.ke"
+                        android:text="ifor@nescokenya.co.ke"
                         android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="HOURS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/nescoservices_hours"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/Nescoservices_array" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_nescokenya"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="NOTIFY" />
 
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
@@ -360,11 +388,12 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginLeft="10dp">
 
                     <TextView
+                        android:id="@+id/tv_zoataka"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -386,24 +415,6 @@
                         android:text="N/A"
                         android:textSize="15dp" />
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Hours"
-                            android:textSize="15sp" />
-
-                        <Spinner
-                            android:id="@+id/zoataka_hours"
-                            android:layout_width="50dp"
-                            android:layout_height="wrap_content"
-                            android:entries="@array/zoataka_array" />
-                    </LinearLayout>
-
 
                     <TextView
                         android:layout_width="match_parent"
@@ -425,12 +436,41 @@
                         android:fontFamily="serif"
                         android:text="N/A"
                         android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="HOURS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/zoataka_hours"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/zoataka_array" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_zoataka"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="NOTIFY" />
 
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
@@ -442,11 +482,12 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginLeft="10dp">
 
                     <TextView
+                        android:id="@+id/tv_bins"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -468,23 +509,6 @@
                         android:text="N/A"
                         android:textSize="15dp" />
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Hours"
-                            android:textSize="15sp" />
-
-                        <Spinner
-                            android:id="@+id/binsservices_hours"
-                            android:layout_width="50dp"
-                            android:layout_height="wrap_content"
-                            android:entries="@array/binsservices_array" />
-                    </LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -505,6 +529,34 @@
                         android:fontFamily="serif"
                         android:text="N/A"
                         android:textSize="15dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="HOURS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/binsservices_hours"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/binsservices_array" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_bins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="NOTIFY" />
                 </LinearLayout>
             </LinearLayout>
 

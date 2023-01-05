@@ -26,9 +26,9 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_height="168dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/logo"
@@ -61,72 +61,89 @@
                     android:text="WELCOME TO GABS"
                     android:textAlignment="center"
                     android:textColor="#000"
-                    android:textSize="30dp"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
                     android:fontFamily="serif"
-                    android:gravity="center_horizontal"
-                    android:text="LETS CREATE A GREEN ENVIRONMENT"
-                    android:textAlignment="center"
+                    android:gravity="start"
+                    android:text="Kindly fill in this form"
+                    android:textAlignment="viewStart"
                     android:textColor="#000"
-                    android:textSize="23dp"
+                    android:textSize="13dp"
                     android:textStyle="bold|italic" />
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="20dp">
-                <TextView
+                <EditText
+                    android:id="@+id/username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:gravity="left"
-                    android:text="Enter your location "
                     android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
                     android:fontFamily="monospace"
-                    android:textColor="#000"
-                    android:textSize="15dp" />
-
-
+                    android:hint="Full name"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black" />
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="monospace"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black" />
                 <EditText
                     android:id="@+id/Location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
                     android:fontFamily="monospace"
                     android:hint="Location"
-                    android:inputType="text"
-                    android:textSize="15dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@android:color/black"
                     android:textColorHint="@android:color/black" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:gravity="left"
-                    android:text="Select your category"
+                    android:text="Category"
+                    android:layout_marginRight="20dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
                     android:fontFamily="monospace"
                     android:textColor="#000"
                     android:textSize="15dp" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <RadioGroup
+                        android:id="@+id/radio_group"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:layout_marginLeft="20dp">
 
-                        <RadioButton android:id="@+id/radio_pirates"
+                        <RadioButton android:id="@+id/radio_company"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Company"
@@ -134,7 +151,7 @@
                             android:textSize="15dp"
                             android:fontFamily="monospace"/>
 
-                        <RadioButton android:id="@+id/radio_ninjas"
+                        <RadioButton android:id="@+id/radio_residence"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="monospace"
@@ -142,9 +159,7 @@
                             android:textSize="15dp"
                             android:text="Private residence" />
                     </RadioGroup>
-
                 </LinearLayout>
-
                 <Button
                     android:id="@+id/btn_save"
                     android:layout_width="match_parent"
@@ -152,13 +167,7 @@
                     android:layout_marginTop="10dp"
                     android:background="@color/colorPrimaryDark"
                     android:text="Save" />
-
-
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
